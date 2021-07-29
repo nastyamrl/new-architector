@@ -11,8 +11,8 @@ padding-top: 92px;
 .wrapper .img-block {
     padding-top: 42px;
 }
-.img-block .img {
-    padding-left: 61px;
+.img-block img {
+    margin-left: 40px;
 }
 .indicates  {
     display: flex;
@@ -24,75 +24,75 @@ footer {
 }
 
 /*adapt*/
-@media screen and (max-width:1200px) {
-    .wr-sert {
-        width: 1140px;
-    }
+
+@media screen and (max-width:1199px) {
     .img-block img:nth-child(3) {
-        padding: 0;
+        padding-top: 30px;
+    }
+    footer .wrapper {
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding: 0 15px 0 15px;
+    }
+    footer .logotype {
+       margin-bottom: 120px;
+    }
+    footer .info-block {
+        margin: 0 auto;
+        margin-bottom: auto;
+    }
+    footer .info-block h2 {
+        text-align: center;
+    }
+    footer .contact-block {
+        margin: 0 auto;
+        margin-bottom: auto;
+    }
+    footer .net-block {
+        margin: 0 auto;
+        margin-bottom: auto;
+    }
+    footer .copyright {
+        margin-top: 20px;
+    padding-top: 31px;
+    }
+}
+@media screen and (max-width:991px) {
+    h1 {
+        text-align: center;
+    }
+    .img-block img:nth-child(1) {
+        margin-left: 127px;
+    }
+    .img-block img:nth-child(2) {
+        margin-top: 127px;
     }
     .indicates {
         justify-content: center;
         align-items: center;
     }
-}
-
-
-
-@media screen and (max-width:1199px) {
-footer {
-        width: 960px;
-    }
     footer .wrapper {
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    footer .info-block {
-        margin: 30px auto;
-        justify-content: center;
         align-items: center;
      }
-    footer .info-block h2 {
-        text-align: center;
-    }
-    footer .contact-block {
-        margin: 30px auto;
-        justify-content: center;
+     footer .info-block {
+         margin-top: -100px;
+         align-items: center;
+     }
+     footer .contact-block {
         align-items: center;
-    }
-    footer .net-block {
-        margin: 30px auto;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media screen and (max-width:991px) {
-    .header {
-        width: 720px;
-    }
-    .wr-sert {
-        width: 720px;
-    }
-    h1 {
-        text-align: center;
-    }
-    .img-block img {
-        margin-left: 176px;
-    }
-    .img-block img:nth-child(2) {
-        margin-left: 115px;
-    }
-    footer {
-        width: 720px;
-    }
+        margin-top: 50px;
+     }
+     footer .net-block {
+         text-align: center;
+         margin-top: 50px;
+         align-items: center;
+     }
 }
 
 @media screen and (max-width:767px) {
-    .header {
-        width: 540px;
-    }
     .header .list {
         display: none;
     }
@@ -100,45 +100,57 @@ footer {
         display: block;
     }
     .header .show-menu {
+        color: #fff;
         display: block;
         position: absolute;
-        background: rgba(0,0,0,0.4);
+        background: rgba(0,0,0,1);
         left: 0;
-        top: 0;
-        width: 50%;
-        padding-left: 70px;
+        top: 55px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        z-index: 1;
     }
-    .wr-sert {
-        width: 540px;
+    .header .nav a {
+        color: #fff;
     }
     .img-block img {
-        margin-left: 85px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .img-block img:nth-child(2) {
-        margin-left: 24px;
+        margin: 30px auto;
     }
-    footer {
-        width: 540px;
+    .img-block img:nth-child(3) {
+        margin-top: 30px;
     }
 }
 @media screen and (max-width:575px) {
-    .header {
-        width: 100%;
-        padding: 0 15px;
+    .nav {
+        position: fixed;
+        top: auto;
+        left: 80%;
     }
-    .wr-sert{
-        width: 100%;
-        padding: 0 15px;
+    .wr-sert .wrapper {
+        padding-top: 50px;
     }
-    .img-block img {
-        margin-left: 56px;
+    .wrapper h1 {
+        font-size: 32px;
+        line-height: 30px;
     }
-    .img-block img:nth-child(2) {
-        margin: 0px;
-      padding-left: 56px;
+   .img-block img:nth-child(2) {
+        margin: 30px auto;
     }
-    footer {
-        width: 100%;
-        padding: 0 15px;
+    .indicates {
+        flex-direction: column;
+    }
+    .indicates .button {
+        padding: 0px;
+    }
+    .button button {
+        margin-top: 30px;
     }
 }

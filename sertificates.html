@@ -47,9 +47,21 @@
           <h1> сертификаты 
             компании </h1>
             <div class="img-block">
-              <img  src="./media/sertificates1.jpeg" alt="img">
-              <img class="img" src="./media/sertificates1.jpeg" alt="img">
-              <img class="img" src="./media/sertificates1.jpeg" alt="img">
+              <picture class="img">
+                <source media="(min-width: 350px)" srcset="./media/sertificates1.jpeg">
+                <source media="(min-width: 100px)" srcset="./media/sertificates1-350px.jpg">
+                <img src="./media/sertificates1.jpeg" alt="img">
+              </picture>
+              <picture class="img">
+                <source media="(min-width: 350px)" srcset="./media/sertificates2.jpeg">
+                <source media="(min-width: 100px)" srcset="./media/sertificates2-350px.jpg">
+                <img src="./media/sertificates2.jpeg" alt="img">
+              </picture>
+              <picture>
+                <source media="(min-width: 350px)" srcset="./media/sertificates3.jpeg">
+                <source media="(min-width: 100px)" srcset="./media/sertificates3-350px.jpg">
+                <img src="./media/sertificates3.jpeg" alt="img">
+              </picture>
             </div>
             <div class="indicates">
               <div class="pages">
